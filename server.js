@@ -4,6 +4,8 @@ const articleRouter = require('./routes/articles')
 
 // ejs es otro jsx, lo defini como el renderizador
 app.set('view engine', 'ejs')
+// hay que especificar que se van a usar archivos estaticos
+app.use('/public', express.static('public'));
 
 app.get('/', (req, res) => {
 	const articles = [
@@ -21,7 +23,7 @@ app.get('/', (req, res) => {
 	res.render('index', { articles: articles })
 })
 
-// despues de la ruta articules se anaden las opciones del router
+// despues de la ruta articles se anaden las opciones del router
 app.use('/articles', articleRouter)
 
 app.listen(5000)
