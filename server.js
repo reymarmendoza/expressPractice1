@@ -12,12 +12,12 @@ app.get('/', (req, res) => {
 		{
 			title: 'Test article 1',
 			createdAt: Date.now(),
-			description: 'Test description',
+			description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ullam sint saepe hic debitis veniam, assumenda ea natus ipsum aperiam magnam delectus consequuntur esse sit earum vitae, distinctio eveniet aspernatur!',
 		},
 		{
 			title: 'Test article 2',
 			createdAt: Date.now(),
-			description: 'Test description',
+			description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum dolor earum fugit molestiae, reprehenderit deleniti!',
 		},
 	]
 	res.render('index', { articles: articles })
