@@ -7,6 +7,15 @@
 	<title>Document</title>
 </head>
 <body>
-	<h1>Hello world</h1>
+	<main>
+		<h1>Blog articles</h1>
+		<a href='/articles/new'>New article</a>
+
+		<% articles.forEach(article => { %>
+			<div>
+				<%= article.title %>
+			</div>
+		<% }) %>
+	</main>
 </body>
 </html>

@@ -1,0 +1,5 @@
+npm i express mongoose ejs
+activar el comando de nodemon en package.json
+crear el archivo de entrada de express
+activate server and hello world
+create router within express
