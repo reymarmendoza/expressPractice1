@@ -1,6 +1,9 @@
 const express = require('express')
-const app = express()
+const mongoose = require('mongoose')
+
 const articleRouter = require('./routes/articles')
+
+const app = express()
 
 // ejs es otro jsx, lo defini como el renderizador
 app.set('view engine', 'ejs')
