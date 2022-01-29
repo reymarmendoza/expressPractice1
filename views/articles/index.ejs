@@ -26,7 +26,7 @@
 					<span> <%= article.createdAt.toLocaleDateString() %> </span>
 				</div>
 				<p> <%= article.description %> </p>
-				<a href="articles/<%= article.id %>">Read more</a>
+				<a href="articles/<%= article.slug %>">Read more</a>
 			</div>
 			<% }) %>
 		</main>
